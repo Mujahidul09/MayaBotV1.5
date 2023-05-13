@@ -47,7 +47,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Mayabot20")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'easysky.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'ea61c1fe54205bfd2a33ece52c9228a32a10d942')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
