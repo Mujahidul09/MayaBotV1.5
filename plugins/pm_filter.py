@@ -283,8 +283,8 @@ async def next_page(bot, query):
     except MessageNotModified:
         pass
     await query.answer()
-    
-    @Client.on_callback_query(filters.regex(r"^lang"))
+   
+@Client.on_callback_query(filters.regex(r"^lang"))
 async def language_check(bot, query):
     _, userid, language = query.data.split("#")
     if int(userid) not in [query.from_user.id, 0]:
